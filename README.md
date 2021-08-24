@@ -1,14 +1,14 @@
 # TP integrador para Digital House
 ## Integrantes
 
-Somos el `Grupo 6` y estamos integrados por:
+Somos el **Grupo 6** y estamos integrados por:
 
 - Nicolás Augsburger
 - Julián Maximiliano Tobal
 - Javier Ignacio Trombetta Ghio
 
 ## Market Place
-El sitio se llama `net4All` y busca vender servicios de conexión a internet, de forma totalmente online. El público princpial a alcanzar, en primera instancia, son las zonas rurales de la Argentina, ya que suele existir un déficit en servicios ofrecidos para que puedan también estar conectados. Una de las ventajas del sitio es que el usuario puede gestionar todo mediante la web, sin tramites presenciales.
+El sitio se llama **net4All** y busca vender servicios de conexión a internet, de forma totalmente online. El público princpial a alcanzar, en primera instancia, son las zonas rurales de la Argentina, ya que suele existir un déficit en servicios ofrecidos para que puedan también estar conectados. Una de las ventajas del sitio es que el usuario puede gestionar todo mediante la web, sin tramites presenciales.
 
 ## ¿Quienes son nuestra competencia?
 
@@ -34,27 +34,27 @@ Algunos de los sitios actuales, que se asemejan a los servicios propuestos, son:
 ```
 ### Colores a utilizar
 
-`Imperial Red`
+**Imperial Red**
 - HEX: E63946 
 - RBG: (230, 57, 70)
 
-`Honeydew white`
+**Honeydew white**
 - HEX: F1FAEE
 - RGB: (241, 250, 238)
 
-`Powder Blue`
+**Powder Blue**
 - HEX: A8DADC
 - RGB: (168, 218, 220)
 
-`Celadon Blue`
+**Celadon Blue**
 - HEX: 457B9D
 - RGB: (69, 123, 157)
 
-`Prussian Blue`
+**Prussian Blue**
 - HEX: 1D3557
 - RGB: (29, 53, 87)
 
 ### Tablero de trabajo
 Utilizamos Trello como herramienta ágil de trabajo. Se puede acceder al mismo ingresando [aquí](https://trello.com/b/wLkGKnhk). 
 
-`(Tablero de acceso privado. Se debe solicitar permiso para ingresar.)`
+**(Tablero de acceso privado. Se debe solicitar permiso para ingresar.)**
