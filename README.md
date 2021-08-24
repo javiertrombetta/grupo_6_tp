@@ -1,44 +1,41 @@
-# grupo_6_tp
-<h1>TP integrador para Digital House</h1>
+# TP integrador para Digital House
+## Integrantes
 
-<h2>Integrantes</h2>
-<p>Somos el <strong>Grupo 6</strong> y estamos integrados por:</p>
+Somos el `Grupo 6` y estamos integrados por:
 
-<nav>
- <ul>Nicolás Augsburger</ul>
- <ul>Julián Maximiliano Tobal</ul>
- <ul>Javier Ignacio Trombetta Ghio</ul>
-</nav>
+- Nicolás Augsburger
+- Julián Maximiliano Tobal
+- Javier Ignacio Trombetta Ghio
 
-<h2>Market Place</h2>
-<p>El sitio se llama <strong>net4All</strong> y busca vender servicios de conexión a internet, de forma totalmente online. El público princpial a alcanzar, en primera instancia, son las zonas rurales de la Argentina, ya que suele existir un déficit en servicios ofrecidos para que puedan también estar conectados. Una de las ventajas del sitio es que el usuario puede gestionar todo mediante la web, sin tramites presenciales.</p>
+## Market Place
+El sitio se llama `net4All` y busca vender servicios de conexión a internet, de forma totalmente online. El público princpial a alcanzar, en primera instancia, son las zonas rurales de la Argentina, ya que suele existir un déficit en servicios ofrecidos para que puedan también estar conectados. Una de las ventajas del sitio es que el usuario puede gestionar todo mediante la web, sin tramites presenciales.
 
-<h2>¿Quienes son nuestra competencia?</h2>
-<p>Algunos de los sitios actuales, que se asemejan a los servicios propuestos, son:</p>
-<nav>
-  <li><a href="https://www.gigared.com.ar/">Gigared</a></li>
-  <li><a href="https://www.claro.com.ar/personas">Claro</a></li>
-  <li><a href="https://www.cablevisionfibertel.com.ar/">Fibertel</a></li>
-  <li><a href="https://www.movistar.com.ar/">Movistar</a></li>
-  <li><a href="https://telecentro.com.ar/">Telecentro</a></li>
-</nav>
+## ¿Quienes son nuestra competencia?
 
-<h2>Adicionles</h2>
-<h3>Logo</h3>
-<p>La imagen se encuentra en <strong>./images/logo.png</strong></p>
-<img src="https://github.com/javiertrombetta/grupo_6_tp/blob/main/public/images/logo.png" alt="Logo de net4All">
+Algunos de los sitios actuales, que se asemejan a los servicios propuestos, son:
 
-<h3>Fuentes a utilizar de Google Fonts</h2>
-<p>href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet"</p>
-<p>font-family: 'Rubik', sans-serif</p>
+- [Gigared](https://www.gigared.com.ar/)
+- [Claro](https://www.claro.com.ar/personas)
+- [Fibertel](https://www.cablevisionfibertel.com.ar/)
+- [Movistar](https://www.movistar.com.ar/)
+- [Telecentro](https://telecentro.com.ar/)
 
-<h3>Colores a utilizar</h2>
-<p>Todavía no decidido. Tarea en Backlog a refinar.</p>
+## Adicionles
+### Logo
 
-<h3>Tablero de trabajo</h3>
-<p>Utilizamos Trello como herramienta ágil de trabajo. Se puede acceder al mismo ingresando <a href="https://trello.com/b/wLkGKnhk">aquí.</a></p>
-<p><strong>Tablero de acceso privado. Se debe solicitar permiso para ingresar.</strong></p>
+![Logo de net4All](https://github.com/javiertrombetta/grupo_6_tp/blob/main/public/images/logo.png)
 
+(La imagen se encuentra en `./images/logo.png`).
 
+### Fuentes a utilizar de Google Fonts
 
+```javascript
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
+```
+### Colores a utilizar
+Todavía no decidido. Tarea en Backlog a refinar.
 
+### Tablero de trabajo
+Utilizamos Trello como herramienta ágil de trabajo. Se puede acceder al mismo ingresando [aquí](https://trello.com/b/wLkGKnhk). 
+
+`(Tablero de acceso privado. Se debe solicitar permiso para ingresar.)`
