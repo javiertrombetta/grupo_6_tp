@@ -34,25 +34,25 @@ Algunos de los sitios actuales, que se asemejan a los servicios propuestos, son:
 ```
 ### Colores a utilizar
 
-**Imperial Red**
-- HEX: E63946 
-- RBG: (230, 57, 70)
+- **Imperial Red**
+    - HEX: E63946 
+    - RBG: (230, 57, 70)    
 
-**Honeydew white**
-- HEX: F1FAEE
-- RGB: (241, 250, 238)
+- **Honeydew white**
+    - HEX: F1FAEE
+    - RGB: (241, 250, 238)
 
-**Powder Blue**
-- HEX: A8DADC
-- RGB: (168, 218, 220)
+- **Powder Blue**
+    - HEX: A8DADC
+    - RGB: (168, 218, 220)
 
-**Celadon Blue**
-- HEX: 457B9D
-- RGB: (69, 123, 157)
+- **Celadon Blue**
+    - HEX: 457B9D
+    - RGB: (69, 123, 157)
 
-**Prussian Blue**
-- HEX: 1D3557
-- RGB: (29, 53, 87)
+- **Prussian Blue**
+    - HEX: 1D3557
+    - RGB: (29, 53, 87)
 
 ### Tablero de trabajo
 Utilizamos Trello como herramienta ágil de trabajo. Se puede acceder al mismo ingresando [aquí](https://trello.com/b/wLkGKnhk). 
