@@ -33,6 +33,12 @@
 <p>font-family: 'Rubik', sans-serif</p>
 
 <h3>Colores a utilizar</h2>
-<p>Todavía no decidido</p>
+<p>Todavía no decidido. Tarea en Backlog a refinar.</p>
+
+<h3>Tablero de trabajo</h3>
+<p>Utilizamos Trello como herramienta ágil de trabajo. Se puede acceder al mismo ingresando <a href="https://trello.com/b/wLkGKnhk">aquí.</a></p>
+<p><strong>Tablero de acceso privado. Se debe solicitar permiso para ingresar.</strong></p>
+
+
 
 
