@@ -1,0 +1,45 @@
+
+/*    Primer Segmento con imagen de fondo   */
+main .container-julian{
+    background-image: url('../images/pexels-christina-morillo-1181318.jpg');
+    background-size: cover;
+    background-position: center;
+    height:500px
+}
+
+#servicio-julian{
+    color:white;
+    font-size:30px;
+    padding: 100px 40px 0px 40px;
+    width: 50%;
+}
+
+
+.portada-julian{
+    color:white;
+    height:30px;
+    font-size:40px;
+    padding:0px 40px 40px 40px;
+    width: 50%
+}
+
+.producto-julian{
+    color:white;
+    font-size: 25px;
+    padding:0px 40px 80px 40px;
+    width: 50%
+}
+
+
+/*    Segundo Segmento con info   */
+
+.info-box {
+    background-color:#050151;
+    padding: 100px;
+    font-size: 18px;
+    color:white
+}
+
+span{
+    padding:100px
+}
