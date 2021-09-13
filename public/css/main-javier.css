@@ -1,0 +1,427 @@
+/*--------------------Mobile First--------------------*/
+
+
+/*Main for cellphones*/
+
+
+main{
+    width: 100%;
+    margin: auto;
+}
+  
+img {
+    max-width: 100%;
+} 
+main section h3{  
+    text-align: center;
+}
+main section.main-hire-button{
+  display: flex;
+}
+
+main section.main-hire-button .fcc-btn {
+  width:100%;
+  background-color: var(--red);
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  text-align:center;
+  font-size: large;
+}
+
+main .main-products-container h3{
+  font-size: xx-large;
+  color: var(--red);
+  text-shadow: 1px 1px 2px black;
+  text-align: center; 
+}
+
+main section .products{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgb(242,243,245);    
+}
+
+main section article.home-main-article{
+    background-color: var(--white);    
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+
+
+main section article.home-main-promo {
+  border: 5px outset; /* Dotted border */
+  border-color: var(--blue);
+  width: 80%;
+  border-radius: 15px; /* Rounded border */
+  margin: 0 auto; /* Center the coupon */
+  max-width: 600px;
+  background-color: ghostwhite;
+}
+main section article.home-main-promo h2{
+  text-align: center;
+  font-size: xx-large;
+  color: var(--darkblue);
+}
+
+main section article .home-main-container p{
+  text-align: center;
+  color:black;
+  margin-top:15px;  
+}
+
+main section  .main-home-discount p{
+  text-align: center;
+  font-size: small;
+  color: var(--blue);
+}
+
+main section article .home-main-container {
+  padding: 20px 16px;
+  background-color: transparent;  
+}
+
+main section article .home-main-codepromo {
+  background: #ccc;
+  padding: 3px;
+  font-size: small;
+}
+
+main section .home-main-hireNow{
+  display: flex;
+  justify-content: center;
+  color: red;
+  text-align: center;
+  font-size: medium;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+
+main section article.home-main-article img{
+    width: 100%;
+}
+main section article.home-main-article .main-description{
+    display: block;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;   
+}
+main section article.home-main-article .main-description .price-discount{
+    display: flex;
+}
+main section article.home-main-article .main-description .price-discount .price{
+    font-size: smaller;
+    font-weight: bold;
+    padding-right: 10px;  
+}
+main section article.home-main-article .main-description .price-discount .discount{
+    font-size: small;
+    font-weight: normal;
+    color: #39b54a;     
+}
+main section article.home-main-article .main-description .description{
+    display: block;
+    font-size: small;
+    font-weight: normal;    
+}
+
+section.banner img{
+    display: none;      
+}
+
+main section .home-main-image{
+    display: none;
+}
+
+
+/*-----------------------Tablet-----------------------*/
+
+@media (min-width: 361px){
+
+    /*carousel*/
+    .wrapper {    
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        z-index: -1;
+      }
+    
+    .slideshow {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      transform: translateX(-50%);
+    }
+    .slideshow--hero {
+      z-index: 3;
+      left: 0;
+      top: 50%;
+      height: 85%;
+      transform: translateY(-50%) skewY(-10deg);
+      transform-origin: center;
+      overflow: hidden;
+      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+    }
+    .slideshow--hero .slides {
+      position: absolute;
+      left: 0;
+      top: -10%;
+      width: 100vw;
+      height: 100vh;
+      animation: 11s slideshow-hero-mobile -3s infinite;
+    }
+    .slideshow--hero .slide1 {
+      background-image: url(../images/slide4.jpg);
+      animation: 20s slides-set-1 -0.1s infinite;
+    }
+    .slideshow--hero .slide2 {
+      background-image: url(../images/slide5.jpg);
+      animation: 20s slides-set-2 -0.1s infinite;
+    }
+    .slideshow--hero .slide3 {
+      background-image: url(../images/slide6.jpg);
+      animation: 20s slides-set-3 -0.1s infinite;
+    }  
+    .slideshow--contrast {
+      z-index: 1;
+      width: 100%;
+      height: 50%;
+      transform: none;
+    }
+    .slideshow--contrast--before {
+      left: 0;
+    }
+    .slideshow--contrast--before .slides {
+      width: 100vw;
+    }
+    .slideshow--contrast--after {
+      z-index: 2;
+      left: auto;
+      right: 0;
+    }
+    .slideshow--contrast--after .slides {
+      width: 100vw;
+      left: auto;
+      right: 0;
+    }
+    .slideshow--contrast .slides {
+      animation: 14s slideshow-contrast -5s infinite;
+    }
+    .slideshow--contrast .slide1 {
+      background-image: linear-gradient(to bottom, rgba(200, 200, 75, 0.25) 0, rgba(200, 75, 75, 0.5) 100%), url(../images/slide4.jpg);
+      animation: 20s slides-set-1 -0.2s infinite;
+    }
+    .slideshow--contrast .slide2 {
+      background-image: linear-gradient(to bottom, rgba(200, 200, 75, 0.25) 0, rgba(200, 75, 75, 0.5) 100%), url(../images/slide5.jpg);
+      animation: 20s slides-set-2 -0.2s infinite;
+    }
+    .slideshow--contrast .slide3 {
+      background-image: linear-gradient(to bottom, rgba(200, 200, 75, 0.25) 0, rgba(200, 75, 75, 0.5) 100%), url(../images/slide6.jpg);
+      animation: 20s slides-set-3 -0.2s infinite;
+    }
+    .slideshow--contrast--after {
+      top: auto;
+      bottom: 0;
+    }
+    .slideshow--contrast--after .slides {
+      animation: 13s slideshow-contrast -13s infinite;
+    }
+    .slideshow--contrast--after .slide {
+      background-position: right;
+    }
+    .slideshow--contrast--after .slide1 {
+      animation: 20s slides-set-1 infinite;
+    }
+    .slideshow--contrast--after .slide2 {
+      animation: 20s slides-set-2 infinite;
+    }
+    .slideshow--contrast--after .slide3 {
+      animation: 20s slides-set-3 infinite;
+    } 
+    .slides,
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    main .main-hire-button{
+      z-index: 1;
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    
+    main section.main-hire-button .fcc-btn{
+      font-size: x-large;
+    }
+
+    section.banner img{
+      display:block;
+      position:relative;
+      width: 100%;
+      opacity: 1;
+      animation: fadeIn 1.0s ease;
+      z-index: -1;
+    }
+    main section .home-main-image{
+      display: block;
+  }    
+   
+
+    /*Main other devices*/
+    main section article .home-main-container{
+      padding-bottom: 50px;      
+    }
+
+    main section .products{
+      box-shadow: 0px 0px 15px rgb(100, 100, 100);
+      z-index: 1;
+      padding-bottom: 100px;
+    }
+    
+    
+    main section article.home-main-promo {
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      border: none; /* Dotted border */
+      border-color: var(--blue);
+      width: 70%;
+      border-radius: 15px; /* Rounded border */
+      margin: 0 auto; /* Center the coupon */
+      max-width: 600px;
+      background-color: ghostwhite;
+    }
+
+    main section article.home-main-article{        
+        max-width: 48%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main section article.home-main-article i{        
+        transform: scale(1);   
+    }    
+    
+    main section article.home-main-article .main-description .description{
+        display: block;
+        font-weight: normal;
+        font-size: smaller;
+        margin-top: 5px;
+        color: #666;
+    }     
+    main section article.home-main-article .main-description .price-discount .price{
+        font-size: medium;  
+    }
+    main section article.home-main-article .main-description .price-discount .discount{
+        font-size: smaller;
+    }
+
+}
+
+/*-----------------------Desktop----------------------*/
+
+@media (min-width: 769px){
+
+    .slideshow--hero {
+        left: 50%;
+        top: 0;
+        width: 67%;
+        height: 100%;
+        transform: translateX(-50%) skewX(-10deg);
+    }
+    .slideshow--hero .slides {
+        top: 0;
+        left: -25%;
+        height: 100%;
+        animation: 11s slideshow-hero -3s infinite;
+    }
+    .slideshow--contrast {
+        width: 50%;
+        height: 100%;
+    }
+    .slideshow--contrast--after {
+        top: 0;
+        bottom: auto;
+    }
+    .slideshow--contrast--after .slides {
+        width: 50vw;
+    }
+
+    main section.main-hire-button .fcc-btn{
+      font-size: xx-large;
+      transition: all 0.4s;
+    }
+    main section.main-hire-button:hover .fcc-btn{
+      transform: scale(1.2);      
+      background-color: var(--blue);
+      box-shadow: 0px 0px 30px rgb(100, 100, 100);
+      cursor:pointer;
+    }
+    
+    main section.main-products-container .home-main-hireNow p{
+      color: var(--red);
+      cursor:pointer;
+      transition: all 0.3s ease-in-out;
+    } 
+    main section.main-products-container .home-main-hireNow p:hover{
+      color: var(--darkblue);
+      cursor:pointer;    
+    }
+    
+
+    /*Main for desktops*/
+    main section .products{
+        height: 500px;      
+        padding-bottom: 580px;
+        opacity: 1;
+        animation: fadeIn 1.5s ease;  
+    }
+    main section h3{
+        opacity: 1;
+        animation: fadeIn 1.5s ease;
+    }    
+
+    main section article.home-main-article{ 
+        max-width: 24%;
+        margin-bottom: auto;                
+        transition: all 0.1s ease-in-out;
+    }
+    main section article.home-main-article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transform: scale(1.07);
+        cursor: pointer;
+    }   
+    main section article.home-main-article i{   
+        transform: scale(1.4);      
+        transition: all 0.2s ease-in-out;
+    }
+    main section article.home-main-article i:hover{
+        color: red;
+        border: 1px solid red;    
+        transform: rotate(-90deg) scale(1.4);
+    }  
+    main section article.home-main-article .main-description .description{
+        display: none;
+        font-size: medium;
+        transition: all 0s;
+    }
+    main section article.home-main-article:hover .main-description .description{
+        display: block;
+    }      
+    main section article.home-main-article .main-description .price-discount .price{
+        font-size:large;  
+    }
+    main section article.home-main-article .main-description .price-discount .discount{
+        font-size: medium;
+    }
+}

@@ -10,7 +10,7 @@ app.listen(3000, ()=>{
 app.get('/', (req,res)=>{
     res.sendFile(__dirname + '/views/index.html');
 });
-app.get('/producto', (req,res)=>{
+app.get('/servicios', (req,res)=>{
     res.sendFile(__dirname + '/views/productDetail.html');
 });
 app.get('/carrito', (req,res)=>{

@@ -1,0 +1,117 @@
+/*--------------------Mobile First--------------------*/
+
+/*Header*/
+
+
+header{    
+    background-color: var(--white);
+    padding: 10px;
+}
+header .header-top-bar{
+    display: flex; 
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;       
+}
+header .header-top-bar .header-top-logo-left img{
+    max-width: 100%;  
+ 
+}
+header .header-bottom-bar{
+    display: none;
+}
+header .header-bottom-burger-menu{
+    text-align: center;
+    margin-top: 10px;
+}
+
+header .header-bottom-burger-menu i{
+    display: block;
+    background-color: var(--darkblue);
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 20px;
+    height: 40px;
+    margin: auto;
+    padding: 10px;
+    max-width: 40px; 
+}
+/*-----------------------Tablet-----------------------*/
+
+@media (min-width: 361px){
+
+    /*Header for tablets*/
+    
+    header{
+        box-shadow: 0px 0px 20px rgb(100, 100, 100);
+        z-index: 1;   
+    }
+    
+    header .header-top-bar .header-top-logo-left{
+        width: 33%;
+    }      
+    header .header-bottom-bar{
+        display: block;
+        margin: auto;
+        max-width: 100%;
+    }
+    header .header-navbar-main{
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+    header .header-bottom-navbar-left{
+        display: flex;
+        max-width: 50%;
+    }
+    header .header-bottom-navbar-right{
+        display: flex;
+        max-width: 50%;
+    }
+    header ul li{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:space-evenly;
+        list-style-type: none;
+        padding: 5px;     
+        margin: auto;
+    }    
+    header ul li a{    
+        text-decoration: none;
+        color: var(--darkblue);
+        padding: 5px 0;
+        font-size:xx-small;
+        text-align: center;        
+    }        
+    header .header-bottom-burger-menu{
+        display: none;
+    }
+}
+
+/*-----------------------Desktop----------------------*/
+
+@media (min-width: 769px){    
+
+    /*Header for desktops*/
+    header .header-top-bar{
+        max-width: 80%;        
+    }    
+    header .header-bottom-bar{
+        max-width: 80%;
+    }
+    header .header-top-bar .header-top-logo-left .header-logo{
+        cursor: pointer;            
+    }
+    header ul li{
+        padding: 10px 15px 10px 15px;
+    }    
+    header ul li a{    
+        font-size:1.3em;        
+        transition: all 0.2s;        
+    }
+    header ul li a:hover{      
+        color: var(--red);
+        text-shadow: 0.3px 0.3px 1px var(--blue);        
+        cursor: pointer;        
+    }
+}

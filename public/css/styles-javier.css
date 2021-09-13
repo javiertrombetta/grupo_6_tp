@@ -1,0 +1,175 @@
+@import "header-javier.css";
+@import "footer-javier.css";
+@import "main-javier.css";
+
+
+/*Labels*/
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: grey;
+    font-weight: normal;  
+    opacity: 1; /* Firefox */
+  }
+  
+::-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: grey;
+    font-weight: normal; 
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: grey;
+    font-weight: normal; 
+}
+
+/*Colors*/
+:root {
+    --red:#E63946;
+    --white: #F1FAEE;
+    --lightblue: #A8DADC;
+    --blue: #457B9D;
+    --darkblue: #1D3557;
+}
+
+
+/*Animations*/
+@keyframes fadeIn{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+
+
+/*Globals*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;    
+  /*border: 1px solid red;*/
+}
+
+h3{ padding-top: 35px;      
+    font-size: medium;
+    font-weight: normal;
+    color: #666;
+}
+
+/*p{
+    font-size: 12px;
+}*/
+
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color: #ebebeb;
+}
+
+
+
+
+/*--------------------Carousel--------------------*/
+
+
+@keyframes slideshow-hero-mobile {
+  0% {
+    transform: scale(1) skewY(10deg);
+  }
+  50% {
+    transform: scale(1.05) skewY(10deg);
+  }
+  100% {
+    transform: scale(1) skewY(10deg);
+  }
+}
+@keyframes slideshow-hero {
+  0% {
+    transform: scale(1) skewX(10deg);
+  }
+  50% {
+    transform: scale(1.05) skewX(10deg);
+  }
+  100% {
+    transform: scale(1) skewX(10deg);
+  }
+}
+@keyframes slideshow-contrast {
+  0% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+@keyframes slides-set-1 {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  31% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  34% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  97% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes slides-set-2 {
+  0% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  31% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  34% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  64% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  67% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+}
+@keyframes slides-set-3 {
+  0% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  64% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  67% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  97% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+}
