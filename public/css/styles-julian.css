@@ -1,45 +1,201 @@
+/*         MOBILE         */
+*{
+    box-sizing: border-box;
+    box-sizing: content-box
+}
 
-/*    Primer Segmento con imagen de fondo   */
 main .container-julian{
     background-image: url('../images/pexels-christina-morillo-1181318.jpg');
     background-size: cover;
     background-position: center;
-    height:500px
+    height:auto;
+}
+
+main .Segundo-container-julian{
+     display:flex;
+    justify-content:space-around;
+     background:url(/images/background-blue-tech.jpg);
+    background-size:cover;
+}
+
+.socalo{
+    padding:1%;
+    height:2%;
+    border:3px solid #d43c47;
+    position:absolute;
+    margin:auto;
+    background: #14045c;
+    color: white;
+    font-size: 8px;
+    border-radius: 20px;
+}
+.up{
+    position:relative;
+    margin-top:auto
+}
+
+#Net{
+    font-weight:bold;
+}
+
+.producto input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 20px;
+    background: #d43c47;
+    color: white;
+    font-size:8px;
+    font-family:sans-serif;
+    border-radius: 20px;
+  }
+
+.info-box{
+    width:100%
+}
+.producto{
+    display:flex;
+    justify-content:space-around;
+    padding: 5% 2% 2%;
 }
 
 #servicio-julian{
-    color:white;
-    font-size:30px;
-    padding: 100px 40px 0px 40px;
-    width: 50%;
+    color:white;;
+    font-size:16px;
+    padding: 10% 30% 0% 5%;
+    width: 65%;
 }
 
 
 .portada-julian{
     color:white;
-    height:30px;
-    font-size:40px;
-    padding:0px 40px 40px 40px;
-    width: 50%
+    height:16px;
+    font-size:16px;
+    padding:0% 20% 5% 5%;
+    width: 40%;
+
 }
 
 .producto-julian{
     color:white;
-    font-size: 25px;
-    padding:0px 40px 80px 40px;
-    width: 50%
+    font-size: 12px;
+    padding:1% 0% 5% 5%;
+    width: 60%
 }
 
 
 /*    Segundo Segmento con info   */
 
 .info-box {
-    background-color:#050151;
-    padding: 100px;
-    font-size: 18px;
-    color:white
+    padding:5%;
+    font-size: 10px;
+    color:white;
+
 }
 
-span{
-    padding:100px
+
+/*      TABLETS        */
+
+@media (min-width:768px){
+
+
+#servicio-julian{
+    font-size:30px;
+}
+
+
+.portada-julian{
+    height:35px;
+    font-size:38px;
+    width:50%;
+}
+
+.producto-julian{
+    font-size: 25px;
+    width: 50%
+}
+
+.socalo{
+    font-size:15px
+}
+
+.info-box {
+    font-size: 18px;
+}
+.producto input[type="submit"] {
+    height: 30px;
+    font-size:15px;
+  }
+}
+
+
+
+/*      LAPTOP        */
+@media (min-width:1024px){
+
+
+
+#servicio-julian{
+    font-size:42px;
+}
+
+
+.portada-julian{
+    height:35px;
+    font-size:50px;
+    width:50%;
+}
+
+.producto-julian{
+    font-size: 33px;
+    width: 50%;
+    padding-top:4%;
+
+}
+
+.socalo{
+    font-size:20px;
+    border:7px solid #e42f2f;
+}
+
+.info-box {
+    font-size: 25px;
+}
+
+.producto input[type="submit"] {
+    height: 50px;
+    font-size:25px;
+  }
+}
+
+
+
+@media (min-width:1400px){
+
+
+
+#servicio-julian{
+    font-size:60px;
+}
+
+
+.portada-julian{
+    height:35px;
+    font-size:70px;
+    width:50%;
+}
+
+.producto-julian{
+    font-size: 43px;
+    width: 50%;
+    padding-top:4%;
+
+}
+
+.socalo{
+    font-size:28px
+}
+
+.info-box {
+    font-size: 40px;
+}
 }
