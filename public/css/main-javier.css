@@ -70,7 +70,6 @@ main section article.home-main-promo h2{
 
 main section article .home-main-container p{
   text-align: center;
-  color:black;
   margin-top:15px;  
 }
 
@@ -100,6 +99,10 @@ main section .home-main-hireNow{
   font-weight: bold;
   transition: all 0.2s;
 }
+main section .home-main-container .home-main-hireNow p{
+  color: var(--red);
+}
+
 
 
 main section article.home-main-article img{
@@ -265,7 +268,7 @@ main section .home-main-image{
     
     main section.main-hire-button .fcc-btn{
       font-size: x-large;
-    }
+    }   
 
     section.banner img{
       display:block;
@@ -310,6 +313,10 @@ main section .home-main-image{
     }
     main section article.home-main-article i{        
         transform: scale(1);   
+    }
+    main section .home-main-container .home-main-hireNow p{
+      color: var(--red);
+      font-size: x-large;
     }    
     
     main section article.home-main-article .main-description .description{
@@ -372,6 +379,18 @@ main section .home-main-image{
       color: var(--red);
       cursor:pointer;
       transition: all 0.3s ease-in-out;
+      font-size: x-large;
+
+      position: relative;      
+      text-transform: uppercase;      
+      letter-spacing: 4px;
+      overflow: hidden;
+      background: linear-gradient(90deg, #fff, var(--red),#fff);
+      background-repeat: no-repeat;
+      background-size: 90%;
+      animation: animate 3s linear infinite;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: rgba(255, 255, 255, 0);
     } 
     main section.main-products-container .home-main-hireNow p:hover{
       color: var(--darkblue);

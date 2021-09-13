@@ -173,3 +173,14 @@ body{
     transform: scale(1.05);
   }
 }
+
+/*--------------------Shine--------------------*/
+
+@keyframes animate {
+  0% {
+    background-position: -1000%;
+  }
+  100% {
+    background-position: 1000%;
+  }
+}
