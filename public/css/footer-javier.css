@@ -101,7 +101,7 @@ footer section .copyright{
     footer{          
         width: 100%;   
         padding: 10px 0 0 0;
-        background-color: whitesmoke;
+        background-color: rgb(242,243,245);
         text-align: none;
     }
     footer .last{
@@ -111,15 +111,27 @@ footer section .copyright{
         align-items: center;
         margin: auto;
     }
-    footer section article .promotion a{
+    footer section article .footer-bottom-navbar-left a,
+    footer section article .footer-bottom-navbar-right a    
+    {
         font-size: medium;
         color: var(--darkblue);
         transition: all 0.2s ease-in-out;
     }
-    footer section article .promotion a:hover{
+    footer section article .footer-bottom-navbar-left a:hover,
+    footer section article .footer-bottom-navbar-right a:hover{
         font-size: medium;
         color: var(--red);
         transform: scale(1.3);
+    }
+    footer section article .footer-contact-info a{
+        font-size: medium;
+        color: var(--darkblue);
+        transition: all 0.2s ease-in-out;
+    }
+    footer section article .footer-contact-info a:hover{
+        font-size: medium;
+        color: var(--red);        
     }
     footer section article{
       width: 33%;

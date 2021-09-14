@@ -365,13 +365,14 @@ main section .home-main-image{
     }
 
     main section.main-hire-button .fcc-btn{
-      font-size: xx-large;
+      font-size: x-large;
       transition: all 0.4s;
+      text-transform: uppercase;       
     }
     main section.main-hire-button:hover .fcc-btn{
-      transform: scale(1.2);      
-      background-color: var(--blue);
-      box-shadow: 0px 0px 30px rgb(100, 100, 100);
+      transform-style: preserve-3d;      
+      background-color: var(--blue);  
+      color:var(--white);    
       cursor:pointer;
     }
     
