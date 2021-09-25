@@ -38,7 +38,7 @@ main .Segundo-container-julian{
     font-weight:bold;
 }
 
-.producto input[type="submit"] {
+.boton{
     border: none;
     outline: none;
     height: 20px;
@@ -47,7 +47,8 @@ main .Segundo-container-julian{
     font-size:8px;
     font-family:sans-serif;
     border-radius: 20px;
-  }
+    text-decoration: none;
+}
 
 .info-box{
     width:100%
@@ -125,6 +126,10 @@ main .Segundo-container-julian{
     height: 30px;
     font-size:15px;
   }
+  .boton{
+    height: 20px;
+    font-size: 24px;
+}
 }
 
 

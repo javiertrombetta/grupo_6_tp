@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-AR"">
+<html lang="es-AR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +8,107 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/carrito-julian.css">
 </head>
 <body>
-    <header><h1>Carrito de Compras</h1></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <div class="header-top-bar">                
+            <div class="header-top-logo-left">
+                <a href="/">
+                    <img src="images/logo-home.png" alt="Logo de net4All" class="header-logo">
+                </a> 
+            </div>                
+        </div>
+        <div class="header-bottom-bar">
+            <nav class="header-navbar-main">
+                <ul class="header-bottom-navbar-left">
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="/servicios">Servicios</a></li>
+                    <li><a href="#">Planes</a></li>
+                    <li><a href="#">Soporte</a></li>
+                </ul>
+                <ul class="header-bottom-navbar-right">
+                    <li><a href="/carrito"><i class="fas fa-cart-plus"></i>  Tu carrito</a></li>
+                    <li><a href="/login"><i class="far fa-user-circle"></i>  Log in</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-bottom-burger-menu">
+            <i class="fa fa-bars burger"></i>
+        </div>
+    </header>
+    <main>
+        <div id="ContainerCarro">
+            <div id="ContainerCarroPal">
+                <div id="Contenido">
+                    <div class="mainTitulo">
+                        <h1 class="tituloCart">Mi Carrito</h1>
+                    </div>
+                </div>
+                <div id="totalCartHeader">
+                    <div class="accionCartHeader">
+                        <input type="button" value="Vaciar Carrito">
+                    </div>
+                    <div style="min-width:15px;min-height: 1px; float: left;"></div>
+                    <div class="accionCartHeader">
+                        <input type="button" value="Guardar Carrito">
+                    </div>
+                    <div class="totalCarrito">
+                        <p class="TotalCaja">Total : 
+                            <span id="ValorTotal">$4050.00</span>
+                        <span><input id="botonPago" type="submit" value="Pagar"></span>
+                        </p>
+                        <p id="leyendaTotal">Los descuentos se aplicaran al momento del cobro</p>
+                    </div>
+                </div>
+            </div>
+            <article id="listaPlanes">
+                <div class="TopLista">
+                  <div id="topname">
+                    <h2 id="nombreLista">Servicios añadidos</h2>
+                  </div>
+                </div>
+                <div id="headerTable">
+                    <h3 class="itemName">Plan</h3>
+                    <h3 class="price">Precio</h3>
+                </div>
+                <div id="articuloItem">
+                    <div class="Item">
+                        <input type="button" id="deletebutton" value="X">
+                        <a id="planservice">PLAN PREMIUM</a>
+                    </div>
+                    <p class="precioTotal">$2150.00</p>
+                </div>
+                <div id="articuloItem2">
+                    <div class="Item">
+                        <input type="button" id="deletebutton" value="X">
+                        <a id="planservice">PLAN HOGAR</a>
+                    </div>
+                    <p class="precioTotal">$1900.00</p>
+                </div>
+            </article>
+            <div id="ContainerCarroPal">
+                <div id="totalCartHeader">
+                    <div class="accionCartHeader">
+                        <input type="button" value="Vaciar Carrito">
+                    </div>
+                    <div style="min-width:15px;min-height: 1px; float: left;"></div>
+                    <div class="accionCartHeader">
+                        <input type="button" value="Guardar Carrito">
+                    </div>
+                    <div class="totalCarrito">
+                        <p class="TotalCaja">Total : 
+                            <span id="ValorTotal">$4050.00</span>
+                        <span><input id="botonPago" type="submit" value="Pagar"></span>
+                        </p>
+                        <p id="leyendaTotal">Los descuentos se aplicaran al momento del cobro</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+pie de pagina
+    </footer>
 </body>
 </html>
