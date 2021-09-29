@@ -1,32 +1,59 @@
 <!DOCTYPE html>
-<html lang="es-AR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>net4All|Ingresá al Portal del Cliente</title>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles-nicolas.css">
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/styles-nicolas.css">
+    <script src="https://kit.fontawesome.com/0b0b0ca8c1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header><h1></header>
-    <main class="login-box">
-        <img class="avatar" src="/images/logo.png">
-        <h1>Login here</h1>
-        <form>
-        <!-- USERNAME INPUT -->
-        <label for="username">Username</label>
-        <input type="text" placeholder="Enter Username">
-        <!-- PASSWORD INPUT -->
-        <label for="password">Password</label>
-        <input type="password" placeholder="Enter Password">
-        <input type="submit" value="Log In">
-        <a href="#">Lost your password?</a><br>
-        <a href="#">Don't have an account?</a>
-        </form>
+    <form class="form">
+        <div class = "login-sections">
 
-    </main>
-    <footer></footer>
+            <!-- Título -->
+            <section class="login-title">
+                <h1>Login</h1>
+            </section>
+
+            <!-- Datos de acceso -->
+            <section class="login-data">
+
+                <!-- correo electrónico --> 
+                <div class="login-input">
+                    <div class = "login-icon">  
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <input class="login-main-inputBox" type="email" name="login-user" minlength="5" required placeholder="Correo Electrónico" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Correo Electrónico'">     
+                </div>       
+                    
+                <!-- contraseña -->
+                <div class="login-input">                
+                    <div class = "login-icon">
+                        <i class="fas fa-key"></i>
+                    </div>                                
+                    <input class="login-main-inputBox" type="password" name="nameAndSurname" minlength="5" required placeholder="Contraseña" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contraseña'">       
+                </div>
+
+            </section>
+
+            <!-- Botón de login -->
+            <section class="login-button">
+                <input type="submit" value="Login" class="button">
+            </section>
+
+            <!-- Registrarse si no tiene cuenta -->
+            <section class="login-register">
+                <p>¿no tienes cuenta? <a class="link" href="registro">Rregistrar</a></p>
+            </section>
+
+            <!-- Términos -->
+            <section class="login-terms">
+                <p>Al registrate aceptas nuestras condiciones de uso y politicas de privacidad</p>
+            </section>
+        </div>
+        
+    </form> 
 </body>
 </html>

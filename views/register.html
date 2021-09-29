@@ -1,17 +1,77 @@
 <!DOCTYPE html>
-<html lang="es-AR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>net4All|Registrate</title>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles-nicolas.css">
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/0b0b0ca8c1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header><h1>Página de registro</h1></header>
-    <main></main>
-    <footer></footer>
+    <form class="form">
+        <div class = "login-sections">
+
+            <!-- Título -->
+            <section class="login-title">
+                <h1>Registro</h1>
+            </section>
+
+            <!-- Datos de acceso -->
+            <section class="login-data">
+
+                <!-- noombre y apellido --> 
+                <div class="login-input">
+                    <div class = "login-icon">  
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <input class="login-main-inputBox" type="text" name="login-user" minlength="5" required placeholder="Nombre y Apellido" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre y Apellido'">     
+                </div>   
+
+                <!-- correo electrónico --> 
+                <div class="login-input">
+                    <div class = "login-icon">  
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <input class="login-main-inputBox" type="email" name="login-user" minlength="5" required placeholder="Correo Electrónico" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Correo Electrónico'">     
+                </div>       
+                    
+                <!-- contraseña -->
+                <div class="login-input">                
+                    <div class = "login-icon">
+                        <i class="fas fa-key"></i>
+                    </div>                                
+                    <input class="login-main-inputBox" type="password" name="nameAndSurname" minlength="5" required placeholder="Contraseña" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contraseña'">       
+                </div>
+
+                <!-- repetir contraseña -->
+                <div class="login-input">                
+                    <div class = "login-icon">
+                        <i class="fas fa-key"></i>
+                    </div>                                
+                    <input class="login-main-inputBox" type="password" name="nameAndSurname" minlength="5" required placeholder="Repetir contraseña" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Repetir contraseña'">       
+                </div>
+
+                
+
+            </section>
+
+            <!-- Botón de login -->
+            <section class="login-button">
+                <input type="submit" value="Registramre" class="button">
+            </section>
+
+            <!-- Registrarse si no tiene cuenta -->
+            <section class="login-register">
+                <p>¿Ya tienes cuenta? <a class="link" href="login">Iniciar sesion</a></p>
+            </section>
+
+            <!-- Términos -->
+            <section class="login-terms">
+                <p>Al registrate aceptas nuestras condiciones de uso y politicas de privacidad</p>
+            </section>
+        </div>
+        
+    </form> 
 </body>
 </html>

@@ -1,85 +1,111 @@
-body {
-    margin: 0;
-    padding: 0;
-    background: url(/images/fondo-abstracto-blanco.jpg) no-repeat center top;
-    background-size: cover;
-    font-family: sans-serif;
-    height: 100vh;
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: grey;
   }
-  
-  .login-box {
-    width: 320px;
-    height: 420px;
-    background:#050151;
-    color: white;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
-  }
-  
-  .login-box .avatar {
-    width: 250px;
-    height: 100px;
-    position: absolute;
-    top: -80px;
-    left: calc(30% - 50px);
-  }
-  
-  .login-box h1 {
-    margin: 0;
-    padding: 0 0 20px;
-    text-align: center;
-    font-size: 22px;
-  }
-  
-  .login-box label {
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-    display: block;
-  }
-  
-  .login-box input {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  .login-box input[type="text"], .login-box input[type="password"] {
-    border: none;
-    border-bottom: 1px solid white;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: white;
-    font-size: 16px;
-  }
-  
-  .login-box input[type="submit"] {
-    border: none;
-    outline: none;
-    height: 40px;
-    background: #E63946;
-    color: white;
-    font-size: 18px;
-    border-radius: 20px;
-  }
-  
-  .login-box input[type="submit"]:hover {
-    cursor: pointer;
-    background: white;
-    color: #000;
-  }
-  
-  .login-box a {
-    text-decoration: none;
-    font-size: 12px;
-    line-height: 20px;
-    color: darkgrey;
-  }
-  
-  .login-box a:hover {
-    color: white;
-  }
+
+*{
+  box-sizing: border-box;
+  /*border: 1px solid red;*/
+}
+.container{
+  width: 100%;
+}
+.login-sections{
+  height: 60vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.login-input{
+  display:flex;
+  justify-content: center;
+  padding: 10px;
+}
+.login-icon{
+  font-size: 30px;
+  margin-right: 10px;
+}
+.login-main-inputBox{
+  width: 90%;
+}
+
+.form{
+  background: white;
+  margin-top: 150px;
+  padding: 50px;
+}
+
+h1{
+  text-align: center;
+  color: black;
+  font-size: 40px;
+}
+/*
+input[type="text"], input[type="password"]{
+  font-size: 20px;
+  width: 82%;
+  padding: 10px;
+  border: none;
+}
+*/
+.input-container{ 
+  border: 1px solid #aaa;
+}
+
+.icon{
+  min-width: 50px;
+  text-align: center;
+  color: #999;
+}
+
+.button{
+  border: none;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  background: #1a2537;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover{
+  background: blue;
+}
+
+p{
+  text-align: center;
+}
+
+.login-register p{
+  font-weight: bold;
+  font-size: medium;
+}
+
+.login-terms p{
+  font-size: smaller;
+}
+
+
+
+
+
+link{
+  text-decoration: none;
+  color: green;
+  font-weight: 600;
+}
+
+.link:hover{
+  color: cadetblue;
+}
+@media(min-width:768px)
+{ 
+.form{
+      margin: auto;
+      width: 500px;
+      margin-top: 150px;
+      border-radius: 2%;
+}  
