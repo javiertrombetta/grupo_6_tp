@@ -7,6 +7,7 @@ Somos el **Grupo 6** y estamos integrados por:
 - Julián Maximiliano Tobal
 - Javier Ignacio Trombetta Ghio
 - Fermin Pacheco
+- Julian Domsch
 
 ## Market Place
 El sitio se llama **net4All** y busca vender servicios de conexión a internet, de forma totalmente online. El público princpial a alcanzar, en primera instancia, son las zonas rurales de la Argentina, ya que suele existir un déficit en servicios ofrecidos para que puedan también estar conectados. Una de las ventajas del sitio es que el usuario puede gestionar todo mediante la web, sin tramites presenciales.
