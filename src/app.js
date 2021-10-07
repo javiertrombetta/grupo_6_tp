@@ -1,26 +1,29 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
-
-app.use(express.static('public'));
+const path = require('path');
 
 const routesMain = require('./routes/main.js');
 const routesServices = require('./routes/services.js');
 const routesUsers = require('./routes/users.js');
-const routesCart = require('./routes/cart.js');
+
+app.use(express.static(path.join(__dirname, '../public')));
+app.set('view engine', 'ejs'); 
+app.set('views', path.join(__dirname, '/views'));
 
 
-
+app.use('/', routesMain);
+app.use('/servicios', routesServices);
 
 app.listen(port, ()=>{
     console.log('Servidor corriendo en http://localhost:3000/');
 });
 
-app.use('/', routesMain);
-app.use('/servicios', routesServices);
-app.use('/carrito', routesCart);
-app.use('/registro', routesUsers);
-app.use('/login', routesUsers);
+
+
+
+// app.use('/registro', routesUsers);
+// app.use('/login', routesUsers);
 
 
 

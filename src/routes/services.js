@@ -1,16 +1,12 @@
 const express = require('express');
 const router = express.Router();
 
-const servicesController = require('../controllers/servicesController.js');
+const servicesController = require('../controllers/servicesController');
 
-app.get('/servicios', (req,res)=>{
-    res.sendFile(__dirname + '/views/productDetail.html');
-});
+router.get('/servicios', servicesController.list);
 
+// router.get('/:idService', servicesController.description);
 
-
-router.get('/:idService', servicesController.description);
-
-router.get('/:idService/details/:Details?', servicesController.details);
+// router.get('/:idService/details/:Details?', servicesController.details);
 
 module.exports = router;
