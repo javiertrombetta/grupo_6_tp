@@ -14,6 +14,7 @@ app.set('views', path.join(__dirname, '/views'));
 
 app.use('/', routesMain);
 app.use('/servicios', routesServices);
+app.use('/users', routesUsers);
 
 app.listen(port, ()=>{
     console.log('Servidor corriendo en http://localhost:3000/');
