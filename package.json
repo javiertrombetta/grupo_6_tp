@@ -1,17 +1,17 @@
 {
   "name": "grupo_6_tp",
   "version": "1.0.0",
-  "description": "<h1>TP integrador para Digital House</h1>",
+  "description": "TP Integrador del Grupo 6",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/app.js",
-    "start": "node app.js"
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/javiertrombetta/grupo_6_tp.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -20,9 +20,8 @@
   "homepage": "https://github.com/javiertrombetta/grupo_6_tp#readme",
   "dependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.17.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.12"
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.13"
   }
 }
