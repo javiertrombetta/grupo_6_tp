@@ -23,6 +23,11 @@ Algunos de los sitios actuales, que se asemejan a los servicios propuestos, son:
 - [Telecentro](https://telecentro.com.ar/)
 
 ## Adicionles
+
+### Implementación en servidor web
+
+- [Heroku link](http://net4all.herokuapp.com/)
+
 ### Logo
 
 ![Logo de net4All](https://github.com/javiertrombetta/grupo_6_tp/blob/main/public/images/logo.png)
