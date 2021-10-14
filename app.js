@@ -24,6 +24,8 @@ app.set('views', 'views');
 
 //************ Defaut dir set ************
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 // ************ Routes manager ************
 app.use('/', index);

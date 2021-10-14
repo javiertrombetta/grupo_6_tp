@@ -14,9 +14,16 @@
         <%- include('../partials/header.ejs') %>
     </header>
     <main>
-        <form class="form">
+        
+        <form class="form" action="/users" method="POST">
+            <% if(locals.errors) {%>
+                <ul>
+                    <% for (let i=0; i < errors.length; i++) { %>
+                        <li style="color: red;"><%= errors[i].msg %> </li>
+                    <% } %>
+                </ul>
+            <% } %> 
             <div class = "login-sections">
-
                 <!-- Título -->
                 <section class="login-title">
                     <h1>Registro</h1>
@@ -30,15 +37,15 @@
                         <div class = "login-icon">  
                             <i class="fas fa-user"></i>
                         </div>
-                        <input class="login-main-inputBox" type="text" name="name" minlength="5" required placeholder="Nombre y Apellido" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre y Apellido'">     
-                    </div>   
+                        <input class="login-main-inputBox" type="text" name="name" placeholder="Nombre y Apellido" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre y Apellido'" value="<%= locals.old && old.name ? old.name : "" %> ">     
+                    </div>
 
                     <!-- correo electrónico --> 
                     <div class="login-input">
                         <div class = "login-icon">  
                             <i class="fas fa-envelope"></i>
                         </div>
-                        <input class="login-main-inputBox" type="email" name="email" minlength="5" required placeholder="Correo Electrónico" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Correo Electrónico'">     
+                        <input class="login-main-inputBox" type="email" name="email" placeholder="Correo Electrónico" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Correo Electrónico'" value="<%= locals.old && old.email ? old.email : "" %> ">     
                     </div>       
                         
                     <!-- contraseña -->
@@ -46,7 +53,7 @@
                         <div class = "login-icon">
                             <i class="fas fa-key"></i>
                         </div>                                
-                        <input class="login-main-inputBox" type="password" name="password" minlength="5" required placeholder="Contraseña" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contraseña'">       
+                        <input class="login-main-inputBox" type="password" name="password" placeholder="Contraseña" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contraseña'" value="<%= locals.old && old.password ? old.password:""%>">       
                     </div>
 
                     <!-- repetir contraseña -->
