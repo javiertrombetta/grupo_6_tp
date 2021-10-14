@@ -1,0 +1,16 @@
+[
+    {
+        "titulo": "Plan Net50",
+        "velocidad-descarga": "50 megas de velocidad de descarga",
+        "velocidad-subida": "Velocidad de subida de 20 mb",
+        "atencion": "Atención al cliente las 24hs",
+        "wifi": "Modem wifi"
+    },
+    {
+        "titulo": "Plan Net100",
+        "velocidad-descarga": "100 megas de velocidad de descarga",
+        "velocidad-subida": "Velocidad de subida de 50 mb",
+        "atencion": "Atención al cliente las 24hs",
+        "wifi": "Modem wifi"
+    }
+]
