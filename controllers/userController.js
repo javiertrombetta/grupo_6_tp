@@ -26,6 +26,9 @@ const userController = {
     },
     delete: (req, res)=>{
         res.render('../views/users/register.ejs');
+    },
+    processRegister: (req,res)=>{
+        
     }    
 }
 module.exports = userController;
