@@ -114,4 +114,19 @@ header .header-bottom-burger-menu i{
         text-shadow: 0.3px 0.3px 1px var(--blue);        
         cursor: pointer;        
     }
+    .profile-section{
+        margin-left: 10px;
+        font-size: 1.3em;
+        background-color: rgb(33, 33, 180);
+        padding: 5px;
+        border-radius: 10px;
+        display: none;
+    }
+    .profile-section p{
+        margin-bottom: 5px;
+    }
+    .profile-section p a{
+        color: rgba(214, 200, 200, 0.815);
+        text-decoration: none;
+    }
 }

@@ -1,10 +1,13 @@
 // ************ Requires ************
 const express = require('express');
 const path = require('path');
-
+const session = require('express-session');
 const createError = require('http-errors');
 const cookieParser = require('cookie-parser');
 require('dotenv').config();
+const userLogger = require('./middleware/userLogger');
+const adminMiddleware = require('./middleware/adminMiddleware');
+
 
 // ************ Routes declare ************
 const index = require('./routes/index');
@@ -31,8 +34,14 @@ app.set('views', 'views');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-
+app.use(session({
+    secret: 'este es el secreto de net4all',
+    resave: false,
+    saveUninitialized: false
+}));
 app.use(cookieParser());
+app.use(userLogger)
+app.use(adminMiddleware)
 
 // ************ Routes manager ************
 app.use('/', index);

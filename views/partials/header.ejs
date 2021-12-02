@@ -1,9 +1,9 @@
-<div class="header-top-bar">                
+<div class="header-top-bar">
     <div class="header-top-logo-left">
         <a href="/">
-            <img src="images/logo-home.png" alt="Logo de net4All" class="header-logo">
-        </a> 
-    </div>                
+            <img src="/images/logo-home.png" alt="Logo de net4All" class="header-logo">
+        </a>
+    </div>
 </div>
 <div class="header-bottom-bar">
     <nav class="header-navbar-main">
@@ -15,10 +15,32 @@
         </ul>
         <ul class="header-bottom-navbar-right">
             <li><a href="/products/cart"><i class="fas fa-cart-plus"></i>  Tu carrito</a></li>
-            <li><a href="/users/login"><i class="far fa-user-circle"></i>  Log in</a></li>
+            <% if (locals.isLogged) { %>
+                <li class="profile"><a href="#">Hola <%= locals.userLogged.name %> </a></li>
+                <div class="profile-section">
+                    <p><a href="/users/profile">My Profile</a></p>
+                    <p><a href="/users/logout">Logout</a></p>
+                </div>
+            <% }else{ %>
+                <li><a href="/users/login"><i class="far fa-user-circle"></i>  Log in</a></li>
+            <% } %>
+            <% if (locals.isAdmin) { %>
+                <li><a href="/users/profile">Admin</a></li>
+            <% } %>
         </ul>
     </nav>
 </div>
 <div class="header-bottom-burger-menu">
     <i class="fa fa-bars burger"></i>
 </div>
+<script>
+window.addEventListener('load', function(){
+    let profile = document.querySelector('.profile a');
+    let profileHidden = document.querySelector('.profile-section');
+
+    profile.addEventListener('click',function(event){
+        profileHidden.style.display = 'block';
+        event.preventDefault();
+    })
+})
+</script>

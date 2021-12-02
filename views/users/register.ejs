@@ -15,7 +15,7 @@
     </header>
     <main>
         
-        <form class="form" action="/users" method="POST">
+        <form class="form" action="/users/register" method="POST">
             <% if(locals.errors) {%>
                 <ul>
                     <% for (let i=0; i < errors.length; i++) { %>
@@ -32,12 +32,21 @@
                 <!-- Datos de acceso -->
                 <section class="login-data">
 
-                    <!-- noombre y apellido --> 
+                    <!-- Nombre --> 
                     <div class="login-input">
                         <div class = "login-icon">  
                             <i class="fas fa-user"></i>
                         </div>
-                        <input class="login-main-inputBox" type="text" name="name" placeholder="Nombre y Apellido" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre y Apellido'" value="<%= locals.old && old.name ? old.name : "" %> ">     
+                        <label for="name">Nombre: </label>
+                        <input class="login-main-inputBox" type="text" name="name" placeholder="Nombre" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre y Apellido'" value="<%= locals.old && old.name ? old.name : "" %> ">     
+                    </div>
+                    <!-- Apellido-->
+                    <div class="login-input">
+                        <div class = "login-icon">  
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <label for="last_name">Apellido: </label>
+                        <input class="login-main-inputBox" type="text" name="last_name" placeholder="Apellido" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre y Apellido'" value="<%= locals.old && old.last_name ? old.last_name : "" %> ">     
                     </div>
 
                     <!-- correo electrónico --> 
@@ -45,6 +54,7 @@
                         <div class = "login-icon">  
                             <i class="fas fa-envelope"></i>
                         </div>
+                        <label for="email">Email: </label>
                         <input class="login-main-inputBox" type="email" name="email" placeholder="Correo Electrónico" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Correo Electrónico'" value="<%= locals.old && old.email ? old.email : "" %> ">     
                     </div>       
                         
@@ -52,7 +62,8 @@
                     <div class="login-input">                
                         <div class = "login-icon">
                             <i class="fas fa-key"></i>
-                        </div>                                
+                        </div>    
+                        <label for="password">Contraseña: </label>                            
                         <input class="login-main-inputBox" type="password" name="password" placeholder="Contraseña" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contraseña'" value="<%= locals.old && old.password ? old.password:""%>">       
                     </div>
 

@@ -6,15 +6,15 @@
     <meta name="viewport" content="width= , initial-scale=1.0">    
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="css/styles-nicolas.css">
+    <link rel="stylesheet" href="/css/styles-nicolas.css">
     <script src="https://kit.fontawesome.com/0b0b0ca8c1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <%- include('../partials/header.ejs') %>
+        <%- include("../partials/header.ejs") %>
     </header>
     <main>
-        <form class="form">
+        <form class="form" action="/users/login" method="POST">
             <div class = "login-sections">
 
                 <!-- Título -->
@@ -24,13 +24,13 @@
 
                 <!-- Datos de acceso -->
                 <section class="login-data">
-
+                    <p style="color: red;"><%= locals.errors ? errors.msg : "" %></p>
                     <!-- correo electrónico --> 
                     <div class="login-input">
                         <div class = "login-icon">  
                             <i class="fas fa-envelope"></i>
                         </div>
-                        <input class="login-main-inputBox" type="email" name="login-user" minlength="5" required placeholder="Correo Electrónico" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Correo Electrónico'">     
+                        <input class="login-main-inputBox" type="email" name="email" minlength="5" required placeholder="Correo Electrónico" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Correo Electrónico'"> 
                     </div>       
                         
                     <!-- contraseña -->
@@ -38,7 +38,11 @@
                         <div class = "login-icon">
                             <i class="fas fa-key"></i>
                         </div>                                
-                        <input class="login-main-inputBox" type="password" name="nameAndSurname" minlength="5" required placeholder="Contraseña" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contraseña'">       
+                        <input class="login-main-inputBox" type="password" name="password" minlength="5" required placeholder="Contraseña" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contraseña'">       
+                    </div>
+
+                    <div class="login-input">                                               
+                        <input class="login-checkbox" type="checkbox" name="remember_user">Recordar mi usuario
                     </div>
 
                 </section>
@@ -50,7 +54,7 @@
 
                 <!-- Registrarse si no tiene cuenta -->
                 <section class="login-register">
-                    <p>¿no tienes cuenta? <a class="link" href="/users/register">Rregistrar</a></p>
+                    <p>¿no tienes cuenta? <a class="link" href="/users/register">Registrar</a></p>
                 </section>
 
                 <!-- Términos -->

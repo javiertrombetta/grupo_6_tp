@@ -31,7 +31,9 @@ body{
 .login-main-inputBox{
   width: 90%;
 }
-
+.login-checkbox{
+  width: 7%;
+}
 .form{
   background: white;
   margin-top: 150px;

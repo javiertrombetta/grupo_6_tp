@@ -2,12 +2,17 @@
 const express = require('express');
 const router = express.Router();
 const {body} = require('express-validator');
+const guestMiddleware = require('../middleware/guestMiddleware')
+const authMiddleware = require('../middleware/authMiddleware')
 // ************ Controllers *********
 const userController = require('../controllers/userController');
 
 const validateRegister = [
     body('name')
-        .notEmpty().withMessage('Debes completar el Nombre y Apellido').bail()
+        .notEmpty().withMessage('Debes completar el Nombre').bail()
+        .isLength({min: 5}),
+    body('last_name')
+        .notEmpty().withMessage('Debes completar el Apellido').bail()
         .isLength({min: 5}),
     body('email')
         .notEmpty().withMessage('Debes completar el email').bail()
@@ -20,17 +25,18 @@ const validateRegister = [
 
 // ************ Dirs *********
 router.get('/', userController.list);
-router.get('/login', userController.login);
-router.get('/register', userController.register);
+router.get('/login', guestMiddleware, userController.login);
+router.post('/login',userController.processLogin);
+router.get('/register', guestMiddleware, userController.register);
 // ******* Procesar Fomulario Registro ********
-router.post('/', validateRegister, userController.processRegister)
-
+router.post('/register', validateRegister, userController.processRegister)
 router.get('/show/:id', userController.show);
 router.get('/create', userController.create);
 router.post('/save', userController.save);
 router.get('/edit/:id', userController.edit);
 router.post('/update/:id', userController.update);
 router.post('/delete/:id', userController.delete);
-
+router.get ('/profile', authMiddleware, userController.showProfile);
+router.get('/logout', userController.logout);
 
 module.exports = router;
