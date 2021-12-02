@@ -10,7 +10,10 @@ module.exports = function(sequelize, dataTypes){
         nombre_plan: {
             type: dataTypes.STRING
         },
-        velocidad: {
+        velocidad_descarga: {
+            type: dataTypes.STRING
+        },
+        velocidad_subida: {
             type: dataTypes.STRING
         },
         atencion_cliente: {
@@ -18,6 +21,9 @@ module.exports = function(sequelize, dataTypes){
         },
         wifi: {
             type: dataTypes.STRING
+        },
+        descripcion: {
+            type: dataTypes.TEXT
         }
     }
     

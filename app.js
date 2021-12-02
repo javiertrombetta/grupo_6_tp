@@ -13,6 +13,7 @@ const adminMiddleware = require('./middleware/adminMiddleware');
 const index = require('./routes/index');
 const products = require('./routes/products');
 const users = require('./routes/users');
+const admin = require('./routes/admin');
 
 // ************ Middleware declare ************
 
@@ -47,6 +48,7 @@ app.use(adminMiddleware)
 app.use('/', index);
 app.use('/users', users);
 app.use('/products', products);
+app.use('/admin', admin);
 
 // ************ catch 404 and forward to error handler ************
 app.use( (req, res, next) => {

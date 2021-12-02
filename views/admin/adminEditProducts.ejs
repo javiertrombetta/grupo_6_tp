@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Producto</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/header-javier.css">
+    <link rel="stylesheet" href="styles-fermin.css">
+</head>
+<body>
+    <header>
+    <%- include('../partials/header.ejs') %>
+    </header>
+
+    <form action="/admin/editar" method="post">
+        <div>
+            <label for="plan_a_editar">Seleccionar Plan a Editar</label>
+            <select name="plan_a_editar" class="form-select">
+                <% for( let i = 0; i < planes.length; i++ ) { %>
+                    <option value="<%= planes[i].id %> "><%= planes[i].nombre_plan %> </option>
+                <% } %>
+            </select>
+        </div>
+        <div>
+            <label for="nombre_plan"></label>Nombre del Plan: <input type="text" name="nombre_plan">
+        </div>
+        <div>
+            <label for="velocidad_descarga">Velocidad de Descarga: </label><input type="text" name="velocidad_descarga">
+        </div>
+        <div>
+            <label for="velocidad_subida">Velocidad de Subida: </label><input type="text" name="velocidad_subida">
+        </div>
+        <div>
+            <label for="atencion_cliente">Atencion al Cliente: </label><input type="text" name="atencion_cliente">
+        </div>
+        <div>
+            <label for="wifi">Wifi: </label><input type="text" name="wifi">
+        </div>
+
+        <input type="submit" value="Editar">
+    </form>
+
+    <footer>
+    <%- include('../partials/footer.ejs') %>
+    </footer>
+</body>
+</html>
