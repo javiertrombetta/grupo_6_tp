@@ -24,7 +24,7 @@ footer article .footer-links{
     display:flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 300px;
+    height: 200px;
 }
 footer ul li{
     display: flex;
@@ -46,7 +46,7 @@ footer ul li a{
 footer article .footer-contact-main{
     display:flex;
     flex-direction: column;
-    height: 300px;
+    height: 150px;
     justify-content: center;
 }
 footer article h3{
@@ -62,6 +62,9 @@ footer section .copyright{
     padding: 50px 0px 20px 0px;
 
 }
+footer article img{
+    max-width: 70%;
+} 
 
 /*-----------------------Tablet-----------------------*/
 
